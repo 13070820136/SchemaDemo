@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.cnblogs.com/eric-lin/schema/user"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:beans="http://www.springframework.org/schema/beans"
+	targetNamespace="http://www.cnblogs.com/eric-lin/schema/user">
+	<xsd:import namespace="http://www.springframework.org/schema/beans" />
+	
+	<xsd:complexType name="userType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<![CDATA[user bean type]]>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="id" type="xsd:ID">
+			<xsd:annotation>
+				<xsd:documentation>
+					<![CDATA[姓名]]>
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="name" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					<![CDATA[姓名]]>
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="sex" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					<![CDATA[性别]]>
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="age" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation>
+					<![CDATA[年龄]]>
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:element name="user" type="userType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<![CDATA[user beam]]>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>
